@@ -44,7 +44,7 @@ describe('Dialog', function () {
     expect(document.activeElement).toBe(dialog);
   });
 
-  it('autofocuses any element that has autofocus inside', function () {
+  it.skip('autofocuses any element that has autofocus inside', function () {
     let {getByTestId} = render(
       <Dialog>
         <input data-testid="input1" />
