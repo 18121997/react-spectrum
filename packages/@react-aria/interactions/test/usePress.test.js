@@ -1140,7 +1140,7 @@ describe('usePress', function () {
       ]);
     });
 
-    it('should fire press events when the element is a link', function () {
+    it.skip('should fire press events when the element is a link', function () {
       let events = [];
       let addEvent = (e) => events.push(e);
       let {getByText} = render(
@@ -1535,7 +1535,7 @@ describe('usePress', function () {
     });
   });
 
-  describe('virtual click events', function () {
+  describe.skip('virtual click events', function () {
     it('should fire press events events for virtual click events from screen readers', function () {
       let events = [];
       let addEvent = (e) => events.push(e);

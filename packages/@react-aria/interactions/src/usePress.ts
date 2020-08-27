@@ -237,9 +237,10 @@ export function usePress(props: PressHookProps): PressResult {
               focusWithoutScrolling(e.currentTarget);
             }
 
-            triggerPressStart(e, 'virtual');
-            triggerPressUp(e, 'virtual');
-            triggerPressEnd(e, 'virtual');
+            // FIXME this was triggered when using Space to toggle a Switch, causing it to not toggle
+            // triggerPressStart(e, 'virtual');
+            // triggerPressUp(e, 'virtual');
+            // triggerPressEnd(e, 'virtual');
           }
 
           state.ignoreEmulatedMouseEvents = false;
